@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Them Sinh Vien</h1>
+	<h2 style="" th:if="${message != null}">
+		<span th:text="${message}"></span>
+	</h2>
+
+	<form action="createStudent" method="post">
+		<div>
+			<label>Vui long nhap ten sinh vien</label> <input name="name" />
+		</div>
+
+		<div>
+			<label>Vui long nhap tuoi sinh vien</label> <input name="age" />
+		</div>
+		<div>
+			<label>Vui long nhap ngay thang nam sinh</label> <input
+				name="dateOfBirth" />
+		</div>
+		<div>
+			<label>Vui long nhap diem</label> <input name="score" />
+		</div>
+		<div>
+			<button type="submit">Xac nhan</button>
+		</div>
+	</form>
+</body>
+</html>
